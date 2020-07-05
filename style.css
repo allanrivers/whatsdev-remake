@@ -1,0 +1,352 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+#navbar {
+  background-color: #303030;
+  width: 100%;
+  height: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#navbar .firstNavMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100%;
+}
+
+#navbar .firstNavMenu #burgerMenu {
+  padding-left: 2rem;
+  height: 1.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+}
+
+#navbar .firstNavMenu #ytLogo {
+  padding-left: 2rem;
+  height: 1.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 0.2rem;
+  cursor: pointer;
+}
+
+#navbar .firstNavMenu h1 {
+  color: white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#navbar .searchBar {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  height: 100%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#navbar .searchBar input {
+  width: 50%;
+  border: 1px solid #525252;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px 0px 0px 5px;
+  height: 5%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1rem;
+}
+
+#navbar .searchBar input:focus {
+  border: #3ea6ff 0.5px solid;
+  outline: none !important;
+}
+
+#navbar .searchBar .searchIcon {
+  background-color: #525252;
+  width: 7%;
+  text-align: center;
+  height: 65%;
+  border-radius: 0px 5px 5px 0px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+}
+
+#navbar .searchBar .searchIcon #searchIcon {
+  height: 1.4rem;
+  padding: 0.2rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+#navbar .lastNavMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+#navbar .lastNavMenu #videoLogo {
+  height: 1.2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 2rem;
+  cursor: pointer;
+}
+
+#navbar .lastNavMenu #appLogo {
+  height: 1.2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 2rem;
+  cursor: pointer;
+}
+
+#navbar .lastNavMenu #bellLogo {
+  height: 1.3rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 2rem;
+  cursor: pointer;
+}
+
+#navbar .lastNavMenu .name {
+  border-radius: 60%;
+  background-color: #0b916f;
+  height: 55%;
+  width: 1.9rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#navbar .lastNavMenu .name h1 {
+  color: white;
+  font-size: 1.2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#video {
+  background-image: url(images/markup.png);
+  height: 80vh;
+  background-position: 0px -100px;
+  background-repeat: no-repeat;
+}
+
+#description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+#description .info {
+  padding-left: 5rem;
+  padding-top: 2rem;
+}
+
+#description .info h2 {
+  font-size: 1.2rem;
+}
+
+#description .info h4 {
+  padding-top: 0.5rem;
+  color: rgba(58, 58, 58, 0.8);
+  font-size: 0.95rem;
+}
+
+#description .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  left: 54%;
+  top: 85%;
+}
+
+#description .icons .thumbsUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 1.5rem;
+}
+
+#description .icons .thumbsUp img {
+  height: 1.2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+  padding-right: 0.5rem;
+}
+
+#description .icons .thumbsUp p {
+  font-size: 0.8rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #777777;
+  font-weight: bold;
+}
+
+#description .icons .thumbsDown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 1.5rem;
+}
+
+#description .icons .thumbsDown img {
+  height: 1.2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 0.5rem;
+  cursor: pointer;
+}
+
+#description .icons .thumbsDown p {
+  font-size: 0.8rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #777777;
+  font-weight: bold;
+}
+
+#description .icons .share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 1.5rem;
+}
+
+#description .icons .share img {
+  height: 1.3rem;
+  padding-right: 0.5rem;
+  cursor: pointer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#description .icons .share p {
+  font-size: 0.9rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #777777;
+  font-weight: bold;
+}
+
+#description .icons .save {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 1.5rem;
+}
+
+#description .icons .save img {
+  padding-right: 0.5rem;
+  height: 1.1rem;
+  cursor: pointer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#description .icons .save p {
+  font-size: 0.9rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #777777;
+  font-weight: bold;
+}
+
+#description .icons .dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 1.5rem;
+}
+
+#description .icons .dots img {
+  height: 1.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.underline {
+  background-color: rgba(168, 167, 167, 0.8);
+  width: 70%;
+  height: 1px;
+  margin-top: 1.5rem;
+  margin-left: 5rem;
+  position: relative;
+}
+
+.underline .dblUnderline {
+  position: absolute;
+  background-color: #777777;
+  height: 0.2rem;
+  width: 9rem;
+  top: -2px;
+  left: 56.8rem;
+}
+/*# sourceMappingURL=style.css.map */

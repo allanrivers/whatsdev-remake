@@ -1,0 +1,339 @@
+
+// Navbar background-color 
+$navBar: #303030;
+
+// center
+$center: center;
+
+// logo color
+$logoColor: #777777;
+
+// pointer
+$pointer: pointer;
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#navbar {
+    background-color: $navBar;
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+
+
+    // Left side of nav
+    .firstNavMenu {
+        display: flex;
+        width: 40%;
+        align-content: $center;
+        height: 100%;
+        
+        #burgerMenu {
+            padding-left: 2rem;
+            height: 1.5rem;
+            align-self: $center;
+            cursor: $pointer;
+        }
+
+        #ytLogo {
+            padding-left: 2rem;
+            height: 1.5rem;
+            align-self: $center;
+            padding-right: 0.2rem;
+            cursor: $pointer;
+        }
+
+        h1 {
+            color: white;
+            align-self: $center;
+            font-size: 1.2rem;
+            cursor: $pointer;
+        }
+    }
+    // End of left side of nav
+
+
+
+    // Search bar  
+        .searchBar {
+            margin: 0 auto;
+            display: flex;
+            width: 80%;
+            height: 100%;
+            align-self: $center;
+            flex-wrap: wrap;
+            
+
+
+            input {
+                width: 50%;
+                border: 1px solid #525252;
+                background-color: black;
+                color: white;
+                padding: 1rem;
+                border-radius: 5px 0px 0px 5px;
+                height: 5%;
+                align-self: $center;
+                font-size: 1rem;
+            }
+
+            input:focus {
+                border: #3ea6ff 0.5px solid;
+                outline: none !important;
+            }
+
+            .searchIcon {
+                background-color: #525252;
+                width: 7%;
+                text-align: $center;
+                height: 65%;
+                border-radius: 0px 5px 5px 0px;
+                align-self: $center;
+                position: relative;
+
+                #searchIcon {
+                    height: 1.4rem;
+                    padding: 0.2rem;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    cursor: $pointer;
+                }
+            }
+    
+        }
+
+    // End of search bar
+
+
+
+    // Start of right side nav
+
+        .lastNavMenu{
+            display: flex;
+            height: 100%;
+
+            #videoLogo {
+                height: 1.2rem;
+                align-self: $center;
+                padding-right: 2rem;
+                cursor: $pointer;
+            }
+
+            #appLogo {
+                height: 1.2rem;
+                align-self: $center;
+                padding-right: 2rem;
+                cursor: $pointer;
+            }
+
+            #bellLogo {
+                height: 1.3rem;
+                align-self: $center;
+                padding-right: 2rem;
+                cursor: $pointer;
+            }
+
+            .name {
+                border-radius: 60%;
+                background-color: #0b916f;
+                height: 55%;
+                width: 1.9rem;
+                align-self: $center;
+                margin-right: 1rem;
+                display: flex;
+                justify-content: $center;
+
+                h1 {
+                    color: white;
+                    font-size: 1.2rem;
+                    align-self: $center;
+                }
+            }
+        }
+
+    // End of right side nav
+}
+// End of navbar
+
+
+
+
+
+// Start of video 
+
+    #video {
+        background-image: url(images/markup.png);
+        height: 80vh;
+        background-position: 0px -100px;
+        background-repeat: no-repeat;
+    }
+
+// End of video
+
+
+
+
+
+
+// Start of description
+    #description {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+
+        .info {
+            padding-left: 5rem;
+            padding-top: 2rem;
+
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            h4 {
+                padding-top: 0.5rem;
+                color: rgba(58, 58, 58, 0.8);
+                font-size: 0.95rem;
+            }
+        }
+
+
+        .icons {
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            left: 54%;
+            top: 85%;
+
+
+            .thumbsUp {
+                display: flex;
+                padding-right: 1.5rem;
+
+                img {
+                    height: 1.2rem;
+                    align-self: center;
+                    cursor: $pointer;
+                    padding-right: 0.5rem;
+                }
+
+                p {
+                    font-size: 0.8rem;
+                    align-self: center;
+                    color: $logoColor;
+                    font-weight: bold;
+                }
+            }
+
+
+
+            .thumbsDown {
+                display: flex;
+                padding-right: 1.5rem;
+
+                img {
+                    height: 1.2rem;
+                    align-self: center;
+                    padding-right: 0.5rem;
+                    cursor: $pointer;
+
+                }
+
+                p {
+                    font-size: 0.8rem;
+                    align-self: center;
+                    color: $logoColor;
+                    font-weight: bold;
+
+                }
+            }
+
+
+
+            .share {
+                display: flex;
+                padding-right: 1.5rem;
+
+                img {
+                    height: 1.3rem;
+                    padding-right: 0.5rem;
+                    cursor: $pointer;
+                    align-self: center;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    align-self: center;
+                    color: $logoColor;  
+                    font-weight: bold;
+
+                }
+            }
+
+
+
+            .save {
+                display: flex;
+                padding-right: 1.5rem;
+
+                img {
+                    padding-right: 0.5rem;
+                    height: 1.1rem;
+                    cursor: $pointer;
+                    align-self: center;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    align-self: center;
+                    color: $logoColor;
+                    font-weight: bold;
+                }
+            }
+
+
+            .dots {
+                display: flex;
+                padding-right: 1.5rem;
+
+                img {
+                    height: 1.5rem;
+                    align-self: center;
+                    cursor: $pointer;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+
+
+    }
+
+
+// End of description
+
+.underline {
+    background-color: rgba(168, 167, 167, 0.8);
+    width: 70%;
+    height: 1px;
+    margin-top: 1.5rem;
+    margin-left: 5rem; 
+    position: relative;
+
+    .dblUnderline {
+        position: absolute;
+        background-color: $logoColor;
+        height: 0.2rem;
+        width: 9rem;
+        top: -2px;
+        left: 56.8rem;
+    }
+
+}
